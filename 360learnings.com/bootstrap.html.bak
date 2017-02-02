@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Suhas Vemuganti   </title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+<style>
+
+/*body*/
+body
+{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+line-height: 1.5;
+background: #EAEDED;
+}
+
+/*jumbotron*/
+.jumbotron
+{
+background: url('./img/showcase.jpg') no-repeat 0 -400px;
+opacity: .95;
+color: white;
+margin-top: 80px;
+}
+
+/*navbar*/
+.navbar-fixed-top
+{
+min-height:80px;
+background:  #f2d2b1;
+border-bottom: #e8491d 3px solid;
+}
+
+
+.navbar-nav li
+{
+margin-top: 15px;
+color: black;
+}
+
+
+
+
+
+/*footer*/
+.footer
+{
+font-weight: bold;
+background:  #f2d2b1;
+padding: 25px;
+}
+</style>
+
+
+
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+					<a class="navbar-brand" href="#"><img src=".\img\logo.png" alt="360Learnings"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">SOLUTIONS</a></li>
+					<li><a href="#">PRODUCTS</a></li>
+					<li><a href="#">PATNERS</a></li>
+					<li><a href="#">360 GREEN</a></li>
+					<li><a href="#">CAREERS</a></li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+			</div>
+			</div>
+	</nav>
+
+
+
+	<div class="jumbotron text-center">
+		<h2>Hello, Welcome!</h2> <br>
+		<h1>360° Learning</h1><br>
+		<h3>For skill-development, organization growth, survival, or for knowledge, if you aren’t continuously learning… you are dying. 
+</h3>
+		
+	</div>
+	
+	<div class="row">
+	<div class="col-sm-12">
+		<div class="thumbnail">	
+			<div class="caption">
+			<img src="./img/process.jpg" class="img-responsive pull-right" alt="Implemention Services">
+				<h3 style="color: #21618C;">360° Learnings</h3>
+				<p><em>For skill-development, organization growth, survival, or for knowledge, if you aren’t continuously learning… you are dying.</em></p> 
+				<p>Holistic learning is the lifeline of an organization-
+				it strengthens roots,
+				helps renew business aspirations and empowers an organization to meet its business objectives.
+				Holistic learning is 360º Learning.</p>
+				<p>Welcome to India’s emerging learning solutions company that provides complete learning solutions to the corporate,
+				government and to educational institutions.
+				We’re a new name but running the show are experts with decades of experience in building learning solutions, building them better each time.
+				Backed by strong technology expertise, we’re now architecting learning solutions that belong to the future.</p>
+			</div>
+		
+			
+		</div>
+	</div>	
+	</div>
+	<div class="row">
+		
+		<div class="col-sm-4">
+			<div class="thumbnail">
+			<div class="caption">
+			<h4 style="color: #AF601A;">Technology</h4>
+			<img src="./img/tech1.jpg" alt="Technology" style="height: 192px;width: 300px;">
+				<p>Cutting-edge technology shall remain the backbone of any good e-learning that has to happen.</p>
+			</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="thumbnail">
+			<div class="caption">
+			<h4 style="color: #117864;">360° Green</h4>
+			<img src="./img/360learn.jpg" alt="360° Green" style="height: 192px;width: 300px;">
+				<p>As we go about building some amazing learning environments for our customers, we heave a sigh of relief.</p>
+			</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="thumbnail">
+			<div class="caption">
+			<h4 style="color: #B03A2E;">Products</h4>
+			<img src="./img/product.png" alt="Products" style="height: 192px;width: 300px;">
+				<p>No one understands the technology behind a successful learning initiative better than us.</p>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer text-center">
+		2017 © 360 Learnings Pvt. Ltd. All Rights Reserved.
+	</div>
+	
+	
+	
+	
+	
+	
+	
+</div>
+</body>
+</html>
