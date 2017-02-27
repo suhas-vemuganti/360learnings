@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> Suhas Vemuganti   </title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
 
 /*body*/
 body
@@ -17,96 +15,140 @@ body
 font-family: Arial, Helvetica, sans-serif;
 font-size: 15px;
 line-height: 1.5;
-background: #EAEDED;
+
 }
-/*navbar*/
+
+
+  /*navbar*/
 .navbar-fixed-top
 {
 min-height:80px;
-background:  #f2d2b1;
-border-bottom: #e8491d 3px solid;
+border-bottom: #000000 3px solid;
 }
 
 
 .navbar-nav li
 {
 margin-top: 15px;
-color: black;
 }
 
+#myNavbar li a
+{
+color:#B03A2E;
+font-weight: bold;
+}
+
+#myNavbar li a:hover
+{
+background-color:#B03A2E;
+color:#000000;
+font-weight: bold;
+}
 .navbar-toggle
 {
-
 margin-top: 30px;
 }
-
-/*sec*/
-.about
-{
-margin-top:85px;
-padding: 1opx;
-}
-.points 
-{
-border:6px solid #21618C;
-padding:15px;
-margin-left:15px;
-
-}
-
-
 
 /*footer*/
 .footer
 {
 font-weight: bold;
-background:  #f2d2b1;
+background-color: #e6e6e6;
+color:#B03A2E;
 padding: 25px;
 }
-</style>
 
+/*jumbotron*/
+.jumbotron
+{
+background: url('./img/showcase.jpg') no-repeat;
+opacity: .95;
+color: white;
+margin-top: 80px;
+}
+
+/*icons*/
+.logo
+  {
+    color: #B03A2E;
+    font-size: 20px;
+  }
+
+  
+  </style>
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-	<div class="container-fluid">
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>                        
-		</button>
-		<a class="navbar-brand" href="./index.html"><img src=".\img\logo.jpg" alt="360Learnings"></a>
-	</div>
-	<div class="collapse navbar-collapse" id="myNavbar">
-		<ul class="nav navbar-nav navbar-right">
-			<li><a href="about.html">ABOUT US</a></li>
-			<li><a href="solution.html">SOLUTIONS</a></li>
-			<li><a href="product.html">PRODUCTS</a></li>
-			<li><a href="patner.html">PARTNERS</a></li>
-			<li><a href="green.html">360 GREEN</a></li>
-			<li><a href="career.html">CAREERS</a></li>
-			<li><a href="contact.html">CONTACT US</a></li>
-		</ul>
-	</div>
-	</div>
-</nav>
+<!-- Navigation Bar -->
 
-<div class="row">
-	<div class="col-sm-12">
-	<div class="thumbnail">	
-		<div class="caption about">
-			<img src="./img/partners.jpg" class="img-responsive pull-right" style="height: 140px;width: 300px;" alt="Implemention Services">
-			<h3 style="color: #21618C;">Contact</h3>
-			<p class="points">For more details <a href="mailto:vemugantisuhas@gmail.com" target="_blank"> contact: info@360learnings.com </a></p>
-		</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+          <a class="navbar-brand" href="./index.html"><img src=".\img\logo.jpg" alt="360Learnings"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right" >
+          <li><a href="about.html" >ABOUT US</a></li>
+          <li><a href="solution.html" >SOLUTIONS</a></li>
+          <li><a href="patner.html">PATNERS</a></li>
+          <li><a href="career.html">CAREERS</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+      </div>
+  </nav>
+
+<!-- Jumbotron -->
+ 
+  	<div class="jumbotron text-center">
+		<h2>Hello, Welcome!</h2> <br>
+		<h2>Feel Free To Contact Us.</h2><br>
+		<h3><em>For skill-development, organization growth, survival, or for knowledge, if you aren’t continuously learning… you are dying. </em></h3>
 	</div>
-	</div>	
+
+
+
+<!-- Container (Contact Section) -->
+<div class="container-fluid">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker logo"></span>360 Learning Solutions (india) Pvt Ltd,<br> 2nd main, 3rd cross, domlur layout,<br> Bangalore, Karnataka.<br>
+      Pin Code: 560071</p>
+      <p><span class="glyphicon glyphicon-phone logo"></span> +91 9845495960</p>
+      <p><span class="glyphicon glyphicon-envelope logo"></span> info@360learnings.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+      <form action="mailto:info@360learnings.com" method="post" enctype="text/plain">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
 </div>
 
-<div class="footer text-center">
-	2017 &copy; 360 Learnings Pvt. Ltd. All Rights Reserved.
+<!-- Footer -->
+
+ <div class="footer text-center">
+    2017 © 360 Learnings Pvt. Ltd. All Rights Reserved.
 </div>
-	
 
 </body>
 </html>
