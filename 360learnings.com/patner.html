@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> Suhas Vemuganti   </title>
-
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
 
 /*body*/
 body
@@ -16,93 +15,136 @@ body
 font-family: Arial, Helvetica, sans-serif;
 font-size: 15px;
 line-height: 1.5;
-background: #EAEDED;
+
 }
-/*navbar*/
+
+
+  /*navbar*/
 .navbar-fixed-top
 {
 min-height:80px;
-background:  #f2d2b1;
-border-bottom: #e8491d 3px solid;
+border-bottom: #000000 3px solid;
 }
 
 
 .navbar-nav li
 {
 margin-top: 15px;
-color: black;
 }
 
+#myNavbar li a
+{
+color:#B03A2E;
+font-weight: bold;
+}
 
+#myNavbar li a:hover
+{
+background-color:#B03A2E;
+color:#000000;
+font-weight: bold;
+}
 .navbar-toggle
 {
-
 margin-top: 30px;
 }
-
-
-/*sec*/
-.about
-{
-margin-top:85px;
-background: #ffffff;
-padding: 10px;
-}
-
-
 
 /*footer*/
 .footer
 {
 font-weight: bold;
-background:  #f2d2b1;
+background-color: #e6e6e6;
+color:#B03A2E;
 padding: 25px;
 }
-</style>
 
+/*jumbotron*/
+.jumbotron
+{
+background: url('./img/intro.jpg') no-repeat;
+opacity: .95;
+color: white;
+margin-top: 80px;
+}
+
+.gpoint
+{
+list-style-image: url('./img/arrow3.jpg');
+}
+  </style>
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-	<div class="container-fluid">
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>                        
-		</button>
-		<a class="navbar-brand" href="./index.html"><img src=".\img\logo.jpg" alt="360Learnings"></a>
-	</div>
-	<div class="collapse navbar-collapse" id="myNavbar">
-		<ul class="nav navbar-nav navbar-right">
-			<li><a href="about.html">ABOUT US</a></li>
-			<li><a href="solution.html">SOLUTIONS</a></li>
-			<li><a href="product.html">PRODUCTS</a></li>
-			<li><a href="patner.html">PARTNERS</a></li>
-			<li><a href="green.html">360 GREEN</a></li>
-			<li><a href="career.html">CAREERS</a></li>
-			<li><a href="contact.html">CONTACT US</a></li>
-		</ul>
-	</div>
-	</div>
-</nav>
+<!-- Navigation Bar -->
 
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+          <a class="navbar-brand" href="./index.html"><img src=".\img\logo.jpg" alt="360Learnings"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right" >
+          <li><a href="about.html" >ABOUT US</a></li>
+          <li><a href="solution.html" >SOLUTIONS</a></li>
+          <li><a href="patner.html">PATNERS</a></li>
+          <li><a href="career.html">CAREERS</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+      </div>
+  </nav>
 
-<div class="row">
-	<div class="col-sm-12">
-	<div class="thumbnail">	
-		<div class="caption about">
-			<img src="./img/people.png" class="img-responsive pull-right" style="height: 192px;width: 300px;" alt="Implemention Services">
-			<h3 style="color: #21618C;">Partners</h3>
-			<p>We’ve formed alliances with leading eLearning companies to give our clients the best available off-the-shelf content and learning resources. Our content is world-class, industry-recognized and the best you are bound to find. </p>
-			<p>Bundled with our products and superior implementation practices, you’re looking at a premium learning solution that is perfectly tailored to your needs. </p>
-		</div>
+  <!-- Jumbotron -->
+
+  	<div class="jumbotron text-center">
+		<h2>Hello, Welcome!</h2> <br>
+		<h2>Know More About Our Patners.</h2><br>
+		<h3><em>For skill-development, organization growth, survival, or for knowledge, if you aren’t continuously learning… you are dying. </em></h3>
 	</div>
-	</div>	
-</div>
 
-	
-<div class="footer text-center">
-		2017 &copy; 360 Leanings Pvt. Ltd. All Rights Reserved.
+<!-- Inner tabs -->
+
+<div class="container">
+	<ul class="nav nav-tabs nav-justified">
+    <li class="active"><a data-toggle="tab" href="#home"><strong>Partners</strong></a></li>
+    <li><a data-toggle="tab" href="#menu1"><strong>360° Green</strong></a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3 style="color: #B03A2E;">Partners</h3>
+        <p>We’ve formed alliances with leading eLearning companies to give our clients the best available off-the-shelf content and learning resources. Our content is world-class, industry-recognized and the best you are bound to find. </p>
+        <p>
+        Bundled with our products and superior implementation practices, you’re looking at a premium learning solution that is perfectly tailored to your needs. </p>
+      </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3 style="color: #B03A2E;">360° Green</h3>
+        <ul class="gpoint">
+        <li><p>As we go about building some amazing learning environments for our customers, we heave a sigh of relief.</li>
+        <li><p>
+        YES, we walk easy on the planet.</p></li>
+        <li><p>
+        E-learning, apart from saving your organization the costs associated with traditional learning practices, also reduces energy consumption and emissions, not to mention the paper that is usually wasted in traditional classroom sessions.</p></li>
+        <li><p>
+        According to a finding from a UK Study, online and distance learning courses consumed nearly 90% less energy and produced 85% fewer CO2 emissions than conventional classroom courses. Though there is no known formal study done in India, the situation is pretty relevant here as well.</p></li>
+        <li><p>
+        Of course it is impossible to do away with traditional learning practices, so what is ideal is an optimum mix of classroom-based training and e-learning for the best results. </p></li>
+        <li><p>
+        Bundled with our products and superior implementation practices, you’re looking at a premium learning solution that is perfectly tailored to your needs. </p></li>
+        <li><p>
+        We at 360º Learning are going our bit to curtail global warming, if you share our passion for environment-friendly learning, lets catch up for a coffee. We believe it will turn out to be a wonderful meeting!</p> </li>
+        </ul>
+    </div>
+  </div>
+  </div>
+<!-- Footer -->
+
+ <div class="footer text-center">
+    2017 © 360 Learnings Pvt. Ltd. All Rights Reserved.
 </div>
 
 </body>
