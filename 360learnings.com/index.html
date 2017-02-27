@@ -1,145 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> Suhas Vemuganti   </title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<style>
-
-/*body*/
+  /*body*/
 body
 {
 font-family: Arial, Helvetica, sans-serif;
 font-size: 15px;
 line-height: 1.5;
-background: #EAEDED;
+
 }
 
-/*jumbotron*/
-.jumbotron
-{
-background: url('./img/showcase.jpg') no-repeat 0 -400px;
-opacity: .95;
-color: white;
-margin-top: 80px;
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 110%;
+      max-height: 50%;
+      margin:  auto;
+  }
+
+  .carousel-inner
+  {
+    margin-top: 65px;
+  }
+  
+  /* clients scroll*/
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    
 }
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
+}
+
+/*icons*/
+.logo
+  {
+    color: #B03A2E;
+    font-size: 50px;
+  }
 
 /*navbar*/
 .navbar-fixed-top
 {
 min-height:80px;
-background:  #f2d2b1;
-border-bottom: #e8491d 3px solid;
+border-bottom: #000000 3px solid;
 }
 
 
 .navbar-nav li
 {
 margin-top: 15px;
-color: black;
 }
 
+#myNavbar li a
+{
+color:#B03A2E;
+font-weight: bold;
+}
 
+#myNavbar li a:hover
+{
+background-color:#B03A2E;
+color:#000000;
+font-weight: bold;
+}
 .navbar-toggle
 {
-
 margin-top: 30px;
 }
-
 
 /*footer*/
 .footer
 {
 font-weight: bold;
-background:  #f2d2b1;
+background-color: #e6e6e6;
+color:#B03A2E;
 padding: 25px;
 }
 </style>
-
-
-
-
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-	<div class="container-fluid">
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>                        
-		</button>
-		<a class="navbar-brand" href="./index.html"><img src=".\img\logo.jpg" alt="360Learnings"></a>
-	</div>
-	<div class="collapse navbar-collapse" id="myNavbar">
-		<ul class="nav navbar-nav navbar-right">
-			<li><a href="about.html">ABOUT US</a></li>
-			<li><a href="solution.html">SOLUTIONS</a></li>
-			<li><a href="product.html">PRODUCTS</a></li>
-			<li><a href="patner.html">PARTNERS</a></li>
-			<li><a href="green.html">360 GREEN</a></li>
-			<li><a href="career.html">CAREERS</a></li>
-			<li><a href="contact.html">CONTACT US</a></li>
-		</ul>
-	</div>
-	</div>
-</nav>
-<div class="jumbotron text-center">
-	<h2>Hello, Welcome!</h2> <br>
-	<h1>360° Learning</h1><br>
-	<h3><em>For skill-development, organization growth, survival, or for knowledge, if you aren't continuously learning... you are dying. </em></h3>
-</div>
-	
-<div class="row">
-	<div class="col-sm-12">
-	<div class="thumbnail">	
-		<div class="caption">
-			<img src="./img/process.jpg" class="img-responsive pull-right" alt="Implemention Services">
-			<h3 style="color: #21618C;">360° Learnings</h3>
-			<p><em>For skill-development, organization growth, survival, or for knowledge, if you aren’t continuously learning… you are dying.</em></p> 
-			<p>Holistic learning is the lifeline of an organization-
-			it strengthens roots,helps renew business aspirations and empowers an organization to meet its business objectives.Holistic learning is 360º Learning.</p>
-			<p>Welcome to India’s emerging learning solutions company that provides complete learning solutions to the corporate,government and to educational institutions.We’re a new name but running the show are experts with decades of experience in building learning solutions, building them better each time.Backed by strong technology expertise, we’re now architecting learning solutions that belong to the future.</p>
-		</div>
-	</div>
-	</div>	
-</div>
-<div class="row">
-	<div class="col-sm-4">
-	<div class="thumbnail">
-		<div class="caption">
-			<h4 style="color: #AF601A;">Technology</h4>
-			<img src="./img/tech.jpg" class="img-responsive" alt="Technology" style="height: 192px;width: 300px;">
-			<p>Cutting-edge technology shall remain the backbone of any good e-learning that has to happen.</p>
-		</div>
-	</div>
-	</div>
-	<div class="col-sm-4">
-	<div class="thumbnail">
-		<div class="caption">
-			<h4 style="color: #117864;">360° Green</h4>
-			<img src="./img/360learn.jpg" class="img-responsive" alt="360° Green" style="height: 192px;width: 300px;">
-			<p>As we go about building some amazing learning environments for our customers, we heave a sigh of relief.</p>
-		</div>
-	</div>
-	</div>
-	<div class="col-sm-4">
-	<div class="thumbnail">
-		<div class="caption">
-			<h4 style="color: #B03A2E;">Products</h4>
-			<img src="./img/product.png" class="img-responsive" alt="Products" style="height: 192px;width: 300px;">
-			<p>No one understands the technology behind a successful learning initiative better than us.</p>
-		</div>
-	</div>
-	</div>
-	</div>
-<div class="footer text-center">
-	2017 &copy; 360 Learnings Pvt. Ltd. All Rights Reserved.
+<!-- Navigation Bar -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+          <a class="navbar-brand" href="./index.html"><img src=".\img\logo.jpg" alt="360Learnings"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right" >
+          <li><a href="about.html" >ABOUT US</a></li>
+          <li><a href="solution.html" >SOLUTIONS</a></li>
+          <li><a href="patner.html">PATNERS</a></li>
+          <li><a href="career.html">CAREERS</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+      </div>
+  </nav>
+
+
+
+
+<div class="container-fluid">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="./img/elearn.jpg" alt="elearn" style="max-height:500px">
+        <div class="carousel-caption">
+          <h2>360º Learning</h2><br>
+          <h2>We are the leading E-Learning company.</h2><br>
+          <h3><em>For skill-development, organization growth, survival, or for knowledge, if you aren’t continuously learning… you are dying. </em></h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./img/learn.jpg" alt="Chania" style="max-height:500px">
+        <div class="carousel-caption">
+           <h2>360º Learning</h2><br>
+          <h2>We are the leading E-Learning company.</h2><br>
+          <h3><em>We provide a Wide range of E-Learning Courses in different domains.</em></h3>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="./img/balance.jpg" alt="Flower" style="max-height:500px">
+        <div class="carousel-caption">
+           <h2>360º Learning</h2><br>
+          <h2>We are the leading E-Learning company.</h2><br>
+          <h3><em>We not only provide core technical skills but also the skills which require to balance your interpersonal skills in the Industry for your great Careers.</em></h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./img/strategy.jpg" alt="Flower" style="max-height:500px">
+        
+      </div>
+  
+    </div>
+
+    
+  </div>
 </div>
 
+
+<!-- About -->
+
+<div class="container-fluid" >
+  <h2 class="text-center" style="color:#B03A2E;">ABOUT</h2>
+  <h3 class="text-center">360°Learnings</h3>
+  <br>
+  <div class="row">
+    <div class="col-sm-9">
+      <p><em>"For skill-development, organization growth, survival, or for knowledge, if you aren’t continuously learning… you are dying."</em></p> 
+        <p>Holistic learning is the lifeline of an organization-
+        it strengthens roots,
+        helps renew business aspirations and empowers an organization to meet its business objectives.
+        Holistic learning is 360º Learning.</p>
+        <p>Welcome to India’s emerging learning solutions company that provides complete learning solutions to the corporate,
+        government and to educational institutions.
+        We’re a new name but running the show are experts with decades of experience in building learning solutions, building them better each time.
+        Backed by strong technology expertise, we’re now architecting learning solutions that belong to the future.</p>
+    </div>
+    <div class="col-sm-3">
+      <img src="./img/process.jpg" class="img-responsive pull-middle" alt="Implemention Services" 
+      style="margin:auto;">
+    </div>
+  </div>
+</div>
+
+<!-- Services -->
+
+<div class="container-fluid text-center" style="background-color: #e6e6e6;">
+  <h2 style="color:#B03A2E;">SERVICES</h2>
+  <h3 class="text-center" >What we offer</h3>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-phone logo"></span>
+      <h4>TECHNOLOGY</h4>
+      <p>Cutting-edge technology shall remain the backbone of any good e-learning that has to happen.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo"></span>
+      <h4>360° GREEN</h4>
+      <p>As we go about building some amazing learning environments for our customers, we heave a sigh of relief.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-briefcase logo"></span>
+      <h4>PRODUCTS</h4>
+      <p>No one understands the technology behind a successful learning initiative better than us.</p>
+    </div>
+  </div>
+  <br><br>
+  </div>
+
+  <!-- Customer Slider -->
+
+<div class="container-fluid text-center">
+<h2 style="color:#B03A2E;">What our customers say</h2>
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+    </div>
+    <div class="item">
+      <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+    </div>
+    <div class="item">
+      <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="footer text-center">
+    2017 © 360 Learnings Pvt. Ltd. All Rights Reserved.
+</div>
 </body>
 </html>
